@@ -2,14 +2,14 @@ import { Math } from '@vicons/tabler';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Math evaluator',
+  name: '数学计算器',
   path: '/math-evaluator',
-  description: 'A calculator for evaluating mathematical expressions. You can use functions like sqrt, cos, sin, abs, etc.',
+  description: '用于计算数学表达式的计算器。支持 sqrt、cos、sin、abs 等函数。',
   keywords: [
-    'math',
-    'evaluator',
-    'calculator',
-    'expression',
+    '数学',
+    '计算器',
+    '表达式',
+    '函数',
     'abs',
     'acos',
     'acosh',

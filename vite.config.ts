@@ -101,6 +101,7 @@ export default defineConfig({
     },
   },
   define: {
+    // eslint-disable-next-line n/prefer-global/process
     'import.meta.env.PACKAGE_VERSION': JSON.stringify(process.env.npm_package_version),
   },
   test: {

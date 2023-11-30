@@ -2,10 +2,10 @@ import { Camera } from '@vicons/tabler';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Camera recorder',
+  name: '在线摄像头',
   path: '/camera-recorder',
-  description: 'Take a picture or record a video from your webcam or camera.',
-  keywords: ['camera', 'recoder'],
+  description: '通过浏览器调用你的电脑摄像头来拍摄照片或录制视频。',
+  keywords: ['摄像头', '摄像机'],
   component: () => import('./camera-recorder.vue'),
   icon: Camera,
   createdAt: new Date('2023-05-15'),

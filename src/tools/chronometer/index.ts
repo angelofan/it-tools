@@ -2,9 +2,9 @@ import { TimerOutlined } from '@vicons/material';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Chronometer',
+  name: '秒表',
   path: '/chronometer',
-  description: 'Monitor the duration of a thing. Basically a chronometer with simple chronometer features.',
+  description: '这是一个简单的秒表。用于监控事物的持续时间。',
   keywords: ['chronometer', 'time', 'lap', 'duration', 'measure', 'pause', 'resume', 'stopwatch'],
   component: () => import('./chronometer.vue'),
   icon: TimerOutlined,

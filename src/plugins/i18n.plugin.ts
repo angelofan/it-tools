@@ -20,7 +20,8 @@ const messages = _.merge(
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'en',
+  locale: 'zh',
+  fallbackLocale: 'en',
   messages,
 });
 

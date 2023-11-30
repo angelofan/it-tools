@@ -2,19 +2,19 @@ import { PasswordRound } from '@vicons/material';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Basic auth generator',
+  name: '基本身份验证生成器',
   path: '/basic-auth-generator',
-  description: 'Generate a base64 basic auth header from an username and a password.',
+  description: '将用户名和密码生成Base64基本身份验证标头',
   keywords: [
-    'basic',
+    '基本',
     'auth',
-    'generator',
-    'username',
-    'password',
+    '生成器',
+    '用户名',
+    '密码',
     'base64',
-    'authentication',
-    'header',
-    'authorization',
+    '验证',
+    '标头',
+    '授权',
   ],
   component: () => import('./basic-auth-generator.vue'),
   icon: PasswordRound,

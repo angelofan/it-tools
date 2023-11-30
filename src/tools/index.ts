@@ -79,7 +79,19 @@ import { tool as xmlFormatter } from './xml-formatter';
 export const toolsByCategory: ToolCategory[] = [
   {
     name: 'Crypto',
-    components: [tokenGenerator, hashText, bcrypt, uuidGenerator, ulidGenerator, cypher, bip39, hmacGenerator, rsaKeyPairGenerator, passwordStrengthAnalyser, pdfSignatureChecker],
+    components: [
+      tokenGenerator,
+      hashText,
+      bcrypt,
+      uuidGenerator,
+      ulidGenerator,
+      cypher,
+      bip39,
+      hmacGenerator,
+      rsaKeyPairGenerator,
+      // passwordStrengthAnalyser,
+      // pdfSignatureChecker,
+    ],
   },
   {
     name: 'Converter',
@@ -91,7 +103,7 @@ export const toolsByCategory: ToolCategory[] = [
       base64FileConverter,
       colorConverter,
       caseConverter,
-      textToNatoAlphabet,
+      // textToNatoAlphabet,
       textToBinary,
       yamlToJson,
       yamlToToml,
@@ -115,7 +127,7 @@ export const toolsByCategory: ToolCategory[] = [
       mimeTypes,
       jwtParser,
       keycodeInfo,
-      slugifyString,
+      // slugifyString,
       htmlWysiwygEditor,
       userAgentParser,
       httpStatusCodes,
@@ -124,13 +136,18 @@ export const toolsByCategory: ToolCategory[] = [
   },
   {
     name: 'Images and videos',
-    components: [qrCodeGenerator, wifiQrCodeGenerator, svgPlaceholderGenerator, cameraRecorder],
+    components: [
+      qrCodeGenerator,
+      wifiQrCodeGenerator,
+      svgPlaceholderGenerator,
+      cameraRecorder,
+    ],
   },
   {
     name: 'Development',
     components: [
       gitMemo,
-      randomPortGenerator,
+      // randomPortGenerator,
       crontabGenerator,
       jsonViewer,
       jsonMinify,
@@ -143,24 +160,49 @@ export const toolsByCategory: ToolCategory[] = [
   },
   {
     name: 'Network',
-    components: [ipv4SubnetCalculator, ipv4AddressConverter, ipv4RangeExpander, macAddressLookup, macAddressGenerator, ipv6UlaGenerator],
+    components: [
+      ipv4SubnetCalculator,
+      ipv4AddressConverter,
+      ipv4RangeExpander,
+      macAddressLookup,
+      macAddressGenerator,
+      ipv6UlaGenerator,
+    ],
   },
   {
     name: 'Math',
-    components: [mathEvaluator, etaCalculator, percentageCalculator],
+    components: [
+      // mathEvaluator,
+      etaCalculator,
+      // percentageCalculator,
+    ],
   },
   {
     name: 'Measurement',
-    components: [chronometer, temperatureConverter, benchmarkBuilder],
+    components: [
+      chronometer,
+      temperatureConverter,
+      // benchmarkBuilder,
+    ],
   },
   {
     name: 'Text',
-    components: [loremIpsumGenerator, textStatistics, emojiPicker, stringObfuscator, textDiff, numeronymGenerator],
+    components: [
+      loremIpsumGenerator,
+      textStatistics,
+      emojiPicker,
+      stringObfuscator,
+      textDiff,
+      // numeronymGenerator,
+    ],
   },
-  {
-    name: 'Data',
-    components: [phoneParserAndFormatter, ibanValidatorAndParser],
-  },
+  // {
+  //   name: 'Data',
+  //   components: [
+  //     phoneParserAndFormatter,
+  //     ibanValidatorAndParser,
+  //   ],
+  // },
 ];
 
 export const tools = toolsByCategory.flatMap(({ components }) => components);

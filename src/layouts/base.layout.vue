@@ -39,7 +39,7 @@ const tools = computed<ToolCategory[]>(() => [
         <HeroGradient class="gradient" />
         <div class="text-wrapper">
           <div class="title">
-            IT - TOOLS
+            IT-Tools
           </div>
           <div class="divider" />
           <div class="subtitle">
@@ -50,7 +50,7 @@ const tools = computed<ToolCategory[]>(() => [
 
       <div class="sider-content">
         <div v-if="styleStore.isSmallScreen" flex flex-col items-center>
-          <locale-selector w="90%" />
+          <!-- <locale-selector w="90%" /> -->
 
           <div flex justify-center>
             <NavbarButtons />
@@ -63,7 +63,7 @@ const tools = computed<ToolCategory[]>(() => [
           <div>
             IT-Tools
 
-            <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
+            <c-link target="_blank" rel="noopener" :href="`https://github.com/angelofan/it-tools/tree/v${version}`">
               v{{ version }}
             </c-link>
 
@@ -73,7 +73,7 @@ const tools = computed<ToolCategory[]>(() => [
                 target="_blank"
                 rel="noopener"
                 type="primary"
-                :href="`https://github.com/CorentinTh/it-tools/tree/${commitSha}`"
+                :href="`https://github.com/angelofan/it-tools/tree/${commitSha}`"
               >
                 {{ commitSha }}
               </c-link>
@@ -114,7 +114,7 @@ const tools = computed<ToolCategory[]>(() => [
 
         <command-palette />
 
-        <locale-selector v-if="!styleStore.isSmallScreen" />
+        <!-- <locale-selector v-if="!styleStore.isSmallScreen" /> -->
 
         <div>
           <NavbarButtons v-if="!styleStore.isSmallScreen" />

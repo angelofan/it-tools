@@ -48,7 +48,7 @@ const output = computed(() => transformer.value(input.value));
     monospace
   />
 
-  <div>
+  <div style="width: 100%;">
     <div mb-5px>
       {{ outputLabel }}
     </div>

@@ -17,11 +17,11 @@
   "license": "GNU GPLv3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CorentinTh/it-tools"
+    "url": "https://github.com/angelofan/it-tools"
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && NODE_OPTIONS=--max_old_space_size=4096 vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview --port 5050",
     "test": "npm run test:unit",
     "test:unit": "vitest --environment jsdom",
@@ -69,11 +69,12 @@
     "marked": "^10.0.0",
     "mathjs": "^11.9.1",
     "mime-types": "^2.1.35",
-    "monaco-editor": "^0.43.0",
+    "monaco-editor": "^0.44.0",
     "naive-ui": "^2.35.0",
     "netmask": "^2.0.2",
     "node-forge": "^1.3.1",
-    "oui-data": "^1.0.10",
+    "otpauth": "^9.2.0",
+    "oui-data": "^1.1.0",
     "pdf-signature-reader": "^1.4.2",
     "pinia": "^2.0.34",
     "plausible-tracker": "^0.3.8",
@@ -83,7 +84,7 @@
     "ulid": "^2.3.0",
     "unicode-emoji-json": "^0.4.0",
     "unplugin-auto-import": "^0.16.4",
-    "uuid": "^9.0.0",
+    "uuid": "^9.0.1",
     "vue": "^3.3.4",
     "vue-i18n": "^9.2.2",
     "vue-router": "^4.1.6",

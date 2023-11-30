@@ -2,11 +2,11 @@ import { List } from '@vicons/tabler';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'List converter',
+  name: '列表转换器',
   path: '/list-converter',
   description:
-    'This tool can process column-based data and apply various changes (transpose, add prefix and suffix, reverse list, sort list, lowercase values, truncate values) to each row.',
-  keywords: ['list', 'converter', 'sort', 'reverse', 'prefix', 'suffix', 'lowercase', 'truncate'],
+    '该工具可以处理基于列的数据并对每行应用各种更改（转置、添加前缀、添加后缀、反向、排序、小写、截断、去除空格、去重）。',
+  keywords: ['列表', '转换器', '排序', '转置', '前缀', '后缀', '小写', '截断', '去重'],
   component: () => import('./list-converter.vue'),
   icon: List,
   createdAt: new Date('2023-05-07'),
