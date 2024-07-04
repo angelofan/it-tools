@@ -1,4 +1,4 @@
-> 由于原仓库逐步支持多语言，此仓库的已经逐步完成了历史使命。请迁移至原仓库 [https://github.com/CorentinTh/it-tools](https://github.com/CorentinTh/it-tools)，此仓库已归档。
+> 由于原仓库逐步支持多语言，此仓库已经逐步完成了历史使命。请迁移至原仓库 [https://github.com/CorentinTh/it-tools](https://github.com/CorentinTh/it-tools)，此仓库已归档。
 
 ![logo](.github/logo.png)
 
