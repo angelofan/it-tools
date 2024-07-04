@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { RouterView, useRoute } from 'vue-router';
-import { NGlobalStyle, NMessageProvider, NNotificationProvider, darkTheme } from 'naive-ui';
+import { NConfigProvider, NGlobalStyle, NMessageProvider, NNotificationProvider, darkTheme, dateZhCN, zhCN } from 'naive-ui';
+
 import { darkThemeOverrides, lightThemeOverrides } from './themes';
 import { layouts } from './layouts';
 import { useStyleStore } from './stores/style.store';
-import { NConfigProvider } from 'naive-ui';
-import { zhCN, dateZhCN } from 'naive-ui';
 
 const route = useRoute();
 const layout = computed(() => route?.meta?.layout ?? layouts.base);
@@ -23,7 +22,7 @@ syncRef(
 </script>
 
 <template>
-  <n-config-provider :theme="theme" :theme-overrides="themeOverrides" :locale="zhCN" :date-locale="dateZhCN">
+  <NConfigProvider :theme="theme" :theme-overrides="themeOverrides" :locale="zhCN" :date-locale="dateZhCN">
     <NGlobalStyle />
     <NMessageProvider placement="bottom">
       <NNotificationProvider placement="bottom-right">
@@ -32,7 +31,7 @@ syncRef(
         </component>
       </NNotificationProvider>
     </NMessageProvider>
-  </n-config-provider>
+  </NConfigProvider>
 </template>
 
 <style>

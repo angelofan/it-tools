@@ -27,23 +27,23 @@ const { copy } = useCopy({ source: token, text: '已复制到剪贴板' });
     <c-card>
       <n-form label-placement="top">
         <n-form-item label="字符类型">
-          <n-checkbox size="large" v-model:checked="withUppercase">
+          <n-checkbox v-model:checked="withUppercase" size="large">
             大写字母
           </n-checkbox>
-          <n-checkbox ml-4 size="large" v-model:checked="withLowercase">
+          <n-checkbox v-model:checked="withLowercase" ml-4 size="large">
             小写字母
           </n-checkbox>
-          <n-checkbox ml-4 size="large" v-model:checked="withNumbers">
+          <n-checkbox v-model:checked="withNumbers" ml-4 size="large">
             数字
           </n-checkbox>
-          <n-checkbox ml-4 size="large" v-model:checked="withSymbols">
+          <n-checkbox v-model:checked="withSymbols" ml-4 size="large">
             符号
           </n-checkbox>
         </n-form-item>
 
         <n-form-item label="字符长度">
           <n-slider v-model:value="length" :step="1" :min="1" :max="512" />
-          <n-input-number ml-4 v-model:value="length" min="1" max="512" :show-button="false" />
+          <n-input-number v-model:value="length" ml-4 min="1" max="512" :show-button="false" />
         </n-form-item>
       </n-form>
 

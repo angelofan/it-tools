@@ -4,7 +4,7 @@ import { useValidation } from '@/composable/validation';
 import { isNotThrowing } from '@/utils/boolean';
 import { withDefaultOnError } from '@/utils/defaults';
 
-const encodeInput = ref('https://it-tools.haokudelei.com');
+const encodeInput = ref('Hello world :)');
 const encodeOutput = computed(() => withDefaultOnError(() => encodeURIComponent(encodeInput.value), ''));
 
 const encodedValidation = useValidation({
@@ -19,7 +19,7 @@ const encodedValidation = useValidation({
 
 const { copy: copyEncoded } = useCopy({ source: encodeOutput, text: '已复制到剪贴板' });
 
-const decodeInput = ref('https%3A%2F%2Fit-tools.haokudelei.com');
+const decodeInput = ref('Hello%20world%20%3A)');
 const decodeOutput = computed(() => withDefaultOnError(() => decodeURIComponent(decodeInput.value), ''));
 
 const decodeValidation = useValidation({

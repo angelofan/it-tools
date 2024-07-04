@@ -36,12 +36,12 @@ describe('base64 utils', () => {
       expect(base64ToText('PDw8Pz8_Pz8_Pz8-Pj4', { makeUrlSafe: true })).to.eql('<<<????????>>>');
     });
 
-    it('should throw for incorrect base64 string', () => {
-      expect(() => base64ToText('a')).to.throw('Incorrect base64 string');
-      expect(() => base64ToText(' ')).to.throw('Incorrect base64 string');
-      expect(() => base64ToText('é')).to.throw('Incorrect base64 string');
+    it('should throw for Base64 字符串不正确', () => {
+      expect(() => base64ToText('a')).to.throw('Base64 字符串不正确');
+      expect(() => base64ToText(' ')).to.throw('Base64 字符串不正确');
+      expect(() => base64ToText('é')).to.throw('Base64 字符串不正确');
       // missing final '='
-      expect(() => base64ToText('bG9yZW0gaXBzdW0')).to.throw('Incorrect base64 string');
+      expect(() => base64ToText('bG9yZW0gaXBzdW0')).to.throw('Base64 字符串不正确');
     });
   });
 
@@ -54,7 +54,7 @@ describe('base64 utils', () => {
       expect(isValidBase64('data:text/plain;base64,YQ==')).to.eql(true);
     });
 
-    it('should return false for incorrect base64 string', () => {
+    it('should return false for Base64 字符串不正确', () => {
       expect(isValidBase64('a')).to.eql(false);
       expect(isValidBase64(' ')).to.eql(false);
       expect(isValidBase64('é')).to.eql(false);

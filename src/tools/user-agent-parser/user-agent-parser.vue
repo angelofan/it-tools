@@ -7,7 +7,7 @@ import { withDefaultOnError } from '@/utils/defaults';
 
 const ua = ref(navigator.userAgent as string);
 
-// 如果 ua 字段中没有输入，则返回 UAParser.IResult 类型的空对象，否则 UAParser 返回当前浏览器的值。 
+// 如果 ua 字段中没有输入，则返回 UAParser.IResult 类型的空对象，否则 UAParser 返回当前浏览器的值。
 // 这很令人困惑，因为显示的结果是空的 UA 字段值。
 function getUserAgentInfo(userAgent: string) {
   return userAgent.trim().length > 0

@@ -25,8 +25,8 @@ describe('text-to-binary', () => {
     });
 
     it('throws an error if the given binary string as no complete octet', () => {
-      expect(() => convertAsciiBinaryToText('010000011')).toThrow('Invalid binary string');
-      expect(() => convertAsciiBinaryToText('1')).toThrow('Invalid binary string');
+      expect(() => convertAsciiBinaryToText('010000011')).toThrow('无效的二进制字符串');
+      expect(() => convertAsciiBinaryToText('1')).toThrow('无效的二进制字符串');
     });
   });
 });

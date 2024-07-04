@@ -26,7 +26,7 @@ const errorCorrectionLevels = [
   },
 ];
 
-const text = ref('https://it-tools.haokudelei.com');
+const text = ref('https://it-tools.com');
 const { qrcode } = useQRCode({
   text,
   color: {

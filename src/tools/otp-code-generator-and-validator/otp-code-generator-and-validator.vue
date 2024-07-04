@@ -88,7 +88,7 @@ const secretValidationRules = [
       此OTP令牌是根据OTP凭证生成的，此工具不会存储此凭证和令牌。运算是通过浏览器即时生成的，不会与服务器共享数据。
     </div>
     <TokenDisplay :tokens="tokens" />
-    <n-progress :percentage="100 - ((100 * interval) / 30)" :status="Math.floor(30 - interval)>10?'success':'error'" :show-indicator="false" style="transform: rotate(180deg);" />
+    <n-progress :percentage="100 - ((100 * interval) / 30)" :status="Math.floor(30 - interval) > 10 ? 'success' : 'error'" :show-indicator="false" style="transform: rotate(180deg);" />
     <div mt-1 style="text-align: center">
       此令牌有效期：还剩{{ String(Math.floor(30 - interval)).padStart(2, '0') }}秒
     </div>

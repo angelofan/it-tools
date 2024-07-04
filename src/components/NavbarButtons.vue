@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BrandGithub, BrandTwitter, InfoCircle, Moon, Sun } from '@vicons/tabler';
+import { BrandGithub, InfoCircle, Moon, Sun } from '@vicons/tabler';
 import { useStyleStore } from '@/stores/style.store';
 
 const styleStore = useStyleStore();

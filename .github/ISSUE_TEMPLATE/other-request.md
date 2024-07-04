@@ -1,13 +1,13 @@
 ---
-name: Other request
-about: Any request that does not concern a tool creation, a new feature request on a tool or a bug
-title: '[OTHER] '
+name: 其他要求
+about: 任何不涉及工具创建、工具新功能请求或错误的请求
+title: '[其他] '
 labels:
-assignees: CorentinTh
+assignees: angelofan
 ---
 
-**Describe the solution you'd like**
-A clear and concise description of what you want.
+**描述您想要的解决方案**
+对您想要的内容进行清晰简洁的描述。
 
-**Additional context**
-Add any other context about the feature request here.
+**额外的背景信息**
+在此处添加有关功能请求的任何其他上下文。

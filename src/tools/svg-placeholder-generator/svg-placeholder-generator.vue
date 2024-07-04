@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import TextareaCopyable from '@/components/TextareaCopyable.vue';
-import { useCopy } from '@/composable/copy';
 import { useDownloadFileFromBase64 } from '@/composable/downloadBase64';
 import { textToBase64 } from '@/utils/base64';
 
@@ -83,7 +82,7 @@ const { download } = useDownloadFileFromBase64({ source: base64, filename: 'å›¾ç
   </div>
 
   <div>
-    <img :src="base64" :width="width" alt="Image" />
+    <img :src="base64" :width="width" alt="Image">
   </div>
 </template>
 

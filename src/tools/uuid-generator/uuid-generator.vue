@@ -55,39 +55,40 @@ const [uuids, refreshUUIDs] = computedRefreshable(() => withDefaultOnError(() =>
     return generator(index);
   }).join('\n'), ''));
 
-const randomString = (length: number) => {
-    let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:!?./-"\'#{([-|\\@)]=}*+';
-    const charactersLength = characters.length;
-    let counter = 0;
-    while (counter < length) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-      counter += 1;
-    }
-    return result;
+function randomString(length: number) {
+  let result = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:!?./-"\'#{([-|\\@)]=}*+';
+  const charactersLength = characters.length;
+  let counter = 0;
+  while (counter < length) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    counter += 1;
+  }
+  return result;
 }
 
-const refreshV35Name = () => {
+function refreshV35Name() {
   v35Args.value.name = randomString(32);
-};
+}
 
 const { copy } = useCopy({ source: uuids, text: '已复制到剪贴板' });
 
-watch(version, async (newVersion, oldVersion) => {
+watch(version, async (newVersion) => {
   if (['NIL', 'v3', 'v5'].includes(newVersion)) {
     count.value = 1;
     multiline.value = true;
-  }else{
+  }
+  else {
     count.value = 5;
     multiline.value = false;
   }
-})
+});
 
 onMounted(() => {
-  if(v35Args.value.name===''){
+  if (v35Args.value.name === '') {
     refreshV35Name();
   }
-})
+});
 </script>
 
 <template>
@@ -98,7 +99,7 @@ onMounted(() => {
       <span text-12px style="opacity: 0.8">{{ versions_info[version] }}</span>
     </div>
 
-    <div mb-2 flex items-center v-if="version === 'v1' || version === 'v4'">
+    <div v-if="version === 'v1' || version === 'v4'" mb-2 flex items-center>
       <span w-100px>生成数量</span>
       <n-input-number v-model:value="count" flex-1 :min="1" :max="50" placeholder="UUID 数量" />
     </div>
@@ -149,7 +150,7 @@ onMounted(() => {
     </div>
 
     <c-card my-3>
-      <div text-center v-for="uuid in uuids.split('\n')" :key="uuid">
+      <div v-for="uuid in uuids.split('\n')" :key="uuid" text-center>
         {{ uuid }}
       </div>
     </c-card>
@@ -158,15 +159,12 @@ onMounted(() => {
       <c-button autofocus @click="copy()">
         复制
       </c-button>
-      <c-button @click="refreshUUIDs" v-if="version === 'v1' || version === 'v4'">
+      <c-button v-if="version === 'v1' || version === 'v4'" @click="refreshUUIDs">
         刷新
       </c-button>
-      <c-button @click="refreshV35Name" v-if="!(version === 'v1' || version === 'v4')">
+      <c-button v-if="!(version === 'v1' || version === 'v4')" @click="refreshV35Name">
         刷新
       </c-button>
     </div>
   </div>
 </template>
-
-<style scoped lang="less">
-</style>

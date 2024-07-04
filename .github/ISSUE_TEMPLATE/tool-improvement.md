@@ -1,13 +1,13 @@
 ---
-name: Tool improvement
-about: Improvement on an existing tool
-title: '[TOOL IMPROVEMENT]'
-labels: enhancement
-assignees: CorentinTh
+name: 工具改进
+about: 对现有工具的改进
+title: '[工具改进]'
+labels: 增强
+assignees: angelofan
 ---
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**描述您想要的解决方案**
+清晰简洁地描述您想要发生的事情。
 
-**Additional context**
-Add any other context about the feature request here.
+**额外的背景信息**
+在此处添加有关功能请求的任何其他上下文。

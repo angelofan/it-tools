@@ -1,25 +1,25 @@
-<!-- Thank you for contributing! -->
+<!-- 感谢您的贡献！ -->
 
-### Description
+### 描述
 
-<!-- Please insert your description here and provide especially info about the "what" this PR is solving -->
+<!-- 请在此处插入您的描述，并特别提供有关此 PR 正在解决的“内容”的信息 -->
 
-### Additional context
+### 额外的背景信息
 
-<!-- e.g. is there anything you'd like reviewers to focus on? -->
+<!-- 例如 您希望审稿人关注什么？ -->
 
 ---
 
-### What is the purpose of this pull request? <!-- (put an "X" next to an item) -->
+### 这个拉取请求的目的是什么？ <!-- （在项目旁边的[]中放置“X”） -->
 
-- [ ] Bug fix
-- [ ] New Feature
-- [ ] Documentation update
-- [ ] Other
+- [ ] 错误修复
+- [ ] 新功能
+- [ ] 文档更新
+- [ ] 其它
 
-### Before submitting the PR, please make sure you do the following
+### 在提交 PR 之前，请确保您执行以下操作
 
-- [ ] Submit the PR against the `dev` branch.
-- [ ] Check that there isn't already a PR that solves the problem the same way to avoid creating a duplicate.
-- [ ] Provide a description in this PR that addresses **what** the PR is solving, or reference the issue that it solves (e.g. `fixes #123`).
-- [ ] Ideally, include relevant tests that fail without this PR but pass with it.
+- [ ] 将 PR 提交到 `dev` 分支。
+- [ ] 检查是否存在以相同方式解决问题的 PR，以避免创建重复项。
+- [ ] 在此 PR 中提供描述，说明 PR 正在解决的**内容**，或引用其解决的问题（例如“修复 #123”）。
+- [ ] 理想情况下，包括在没有此 PR 的情况下失败但通过的相关测试。

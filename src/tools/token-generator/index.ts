@@ -1,6 +1,5 @@
 import { ArrowsShuffle } from '@vicons/tabler';
 import { defineTool } from '../tool';
-import { translate } from '@/plugins/i18n.plugin';
 
 export const tool = defineTool({
   name: '随机字符生成器',

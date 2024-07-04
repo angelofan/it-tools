@@ -24,5 +24,5 @@ function convert(list: string, options: ConvertOptions): string {
     .join(options.separator + lineBreak)
     .thru(text => [options.listPrefix, text, options.listSuffix].join(lineBreak))
     .value()
-    .replace(/(\r\n|\n|\r)/,"");
+    .replace(/^(\r\n|\n|\r)/, '');
 }

@@ -16,8 +16,8 @@ describe('boolean utils', () => {
 
   describe('booleanToHumanReadable', () => {
     it('should return "Yes" if the value is true and "No" otherwise', () => {
-      expect(booleanToHumanReadable(true)).to.eql('Yes');
-      expect(booleanToHumanReadable(false)).to.eql('No');
+      expect(booleanToHumanReadable(true)).to.eql('是');
+      expect(booleanToHumanReadable(false)).to.eql('否');
     });
   });
 });

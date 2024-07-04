@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { rmb } from './rmb-d.models';
 import { useThemeVars } from 'naive-ui';
+import { rmb } from './rmb-d.models';
 
 const themeVars = useThemeVars();
 const inputRmb = ref(23);
-const outputRmb = computed(() => rmb(inputRmb.value));;
+const outputRmb = computed(() => rmb(inputRmb.value)); ;
 </script>
 
 <template>
@@ -17,9 +17,10 @@ const outputRmb = computed(() => rmb(inputRmb.value));;
 
     <c-card title="大写金额" flex flex-col>
       <div m-0 m-x-auto>
-        <span :class="item.type"
-          v-for="(item, index) in outputRmb" 
+        <span
+          v-for="(item, index) in outputRmb"
           :key="index"
+          :class="item.type"
         >
           {{ item.value }}
         </span>

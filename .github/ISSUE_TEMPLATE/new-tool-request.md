@@ -1,19 +1,19 @@
 ---
-name: New tool request
-about: Suggest a new tool idea
-title: '[NEW TOOL]'
-labels: new tool
-assignees: CorentinTh
+name: 新工具请求
+about: 提出一个新的工具想法
+title: '[新工具]'
+labels: 新工具
+assignees: angelofan
 ---
 
-**What tool do you want?**
-Example: a token generator
+**你想要什么工具？**
+示例：令牌生成器
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**描述您想要的解决方案**
+清晰简洁地描述您想要发生的事情。
 
-**Is their example of this tool in the wild?**
-Provide link to already existing tool or npm packages if any exists
+**实际例子**
+提供现有工具或 npm 包的链接（如果存在）
 
-**Additional context**
-Add any other context about the feature request here.
+**额外的背景信息**
+在此处添加有关功能请求的任何其他上下文。
